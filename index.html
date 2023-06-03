@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Future is Now</title>
+<link rel="stylesheet" href="style.css">
+<script src='https://api.mapbox.com/mapbox-gl-js/v2.13.0/mapbox-gl.js'></script>
+<link href='https://api.mapbox.com/mapbox-gl-js/v2.13.0/mapbox-gl.css' rel='stylesheet'/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script defer src=app.js></script>
+<style> @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500;700&family=Josefin+Slab:wght@600&family=Poppins:wght@500;700;800&display=swap'); </style>
+
+<header>
+    <img src="media\header.jpg" id="triangle">
+    <article>
+        <h3>The School of Media and IT</h3>
+        <h4>P R E S E N T S</h4>
+        <div>
+            <h1>THE<br>FUTURE<br>IS NOW</h1>    
+            <h2>The Mini<br>Conference in AI<br><br>MAY 26, 2023</h2>
+        </div>
+        <div class="wrapper">
+            <a href="#enter"><span>Get Started</span></a>
+        </div>  
+    </article>
+    <img src="media\streak.png" id="streak">
+    <div class="vector1"></div>
+</header>
+
+<section id="enter">
+    <article>
+        <h1>May Mini AI Conference</h1>
+        <h2>Explore the diverse applications of AI, the challenges and opportunities that come with its development, and how it can be leveraged to make a positive impact on society. We look forward to engaging in meaningful conversations that will further the progress of AI and its potential to shape the future.</h2>
+    </article>
+</section>
+
+<section id="time">
+    <h1>Timetable</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Time</th>
+                <th colspan="2">Event Taking Place</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>8:00am<br>9:00am</td>
+                <td>Doors open and registration</td>
+            </tr>
+            <tr>
+                <td>9:00am<br>9:30am</td>
+                <td>Opening remarks</td>
+            </tr>
+            <tr>
+                <td>9:30am<br>10:30am</td>
+                <td onclick="highlightText('Mark')"><a href="#speaker" id="presenter"><u>Mark Anderson</u>: Introduction to AI</a></td>
+            </tr>
+            <tr>
+                <td>10:30am<br>11:30am</td>
+                <td onclick="highlightText('Sarah')"><a href="#speaker" id="presenter"><u>Sarah Johnson</u>: AI Applications in Healthcare</a></td>
+            </tr>
+            <tr>
+                <td>11:30am<br>12:30pm</td>
+                <td>Workshop 1: Developing AI Algorithms</td>
+            </tr>
+            <tr>
+                <td>12:30pm<br>1:30pm</td>
+                <td>Lunch</td>
+            </tr>
+            <tr>
+                <td>1:30pm<br>2:30pm</td>
+                <td onclick="highlightText('Jennifer')"><a href="#speaker" id="presenter"><u>Jennifer Williams</u>: Machine Learning</a></td>
+            </tr>
+            <tr>
+                <td>2:30pm<br>3:30pm</td>
+                <td onclick="highlightText('Andrew')"><a href="#Sarah" id="presenter"><u>Andrew Smith</u>: Natural Language Processing</a></td>
+            </tr>
+            <tr>
+                <td>3:30pm<br>4:30pm</td>
+                <td>Workshop 2: Implementing AI in Business</td>
+            </tr>
+            <tr>
+                <td>4:30pm<br>5:30pm</td>
+                <td onclick="highlightText('Rebecca')"><a href="#Jennifer" id="presenter"><u>Rebecca Jones</u>: AI and the Future</a></td>
+            </tr>
+            <tr>
+                <td>5:30pm<br>6:00pm</td>
+                <td>Closing remarks and networking</td>
+            </tr>
+        </tbody>
+    </table>
+    <h1>Speakers</h1>
+</section>
+
+<section id="speaker">
+    <div id="Mark">
+        <img src="media\mark.jpg">
+        <article>
+            <h3 class="text-with-icon">
+                Mark Anderson <i class="fa fa-twitter"></i> @mark_anderson
+            </h3>
+            <h1>Introduction to AI</h1>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi itaque a molestiae sunt quas dolorum perferendis, minus laborum eos numquam expedita possimus quaerat ex quam qui necessitatibus ullam ut! Iste! 
+            </p>
+        </article>
+    </div>
+
+    <div id="Sarah">
+        <img src="media\sarah.jpg">
+        <article>
+            <h3 class="text-with-icon">
+                Sarah Johnson <i class="fa fa-twitter"></i> @sarah_johnson
+            </h3>
+            <h1>AI Applications in Healthcare</h1>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi itaque a molestiae sunt quas dolorum perferendis, minus laborum eos numquam expedita possimus quaerat ex quam qui necessitatibus ullam ut! Iste!
+            </p>
+        </article>
+    </div>
+
+    <div id="Jennifer">
+        <img src="media\jennifer.jpg">
+        <article>
+            <h3 class="text-with-icon">
+                Jennifer Williams <i class="fa fa-twitter"></i> @jennifer_williams
+            </h3>
+            <h1>Machine Learning</h1>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi itaque a molestiae sunt quas dolorum perferendis, minus laborum eos numquam expedita possimus quaerat ex quam qui necessitatibus ullam ut! Iste! 
+            </p>
+        </article>
+    </div>
+
+    <div id="Andrew">
+        <img src="media\andrew.jpg">
+        <article>
+            <h3 class="text-with-icon">
+                Andrew Smith <i class="fa fa-twitter"></i> @andrew_smith
+            </h3>
+            <h1>Natural Language Processing</h1>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi itaque a molestiae sunt quas dolorum perferendis, minus laborum eos numquam expedita possimus quaerat ex quam qui necessitatibus ullam ut! Iste!
+            </p>
+        </article>
+    </div>
+
+    <div id="Rebecca" class="speaker fifth-speaker">
+        <img src="media\rebecca.jpeg">
+        <article>
+            <h3 class="text-with-icon">
+                Rebecca Jones <i class="fa fa-twitter"></i> @rebecca_jones
+            </h3>
+            <h1>AI and the Future</h1>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi itaque a molestiae sunt quas dolorum perferendis, minus laborum eos numquam expedita possimus quaerat ex quam qui necessitatibus ullam ut! Iste!
+            </p>
+        </article>
+    </div>
+</section>
+
+<section id="form" class="form">    
+    <div class="vector2"></div>
+    <div id="cube">
+        <article id="welcome">
+            <h1>Welcome!</h1>
+            <h2>Register now.</h2>
+        </article>
+        <form id="login">
+            <article>
+                <h1>Registration</h1>
+                <h2>Fill in the form</h2>
+            </article>
+            <div>
+                <input type="name" name="name" id="name" required placeholder="Name">
+            </div>
+            <div>
+                <input type="email" name="email" id="email" required placeholder="Example@gmail.com">
+            </div>
+            <button type="submit" id="submit">Register</button>
+        </form>
+    </div>
+</section>
+
+<section id="map">
+</section>
+
+<footer>
+    <div id="pcu-scroll">
+        <a href="https://www.praguecityuniversity.cz/" target="_blank"><img src="media\pcu.png" id="pcu"></a>
+        <a href="#" id="scrollTop" class="scrollTop">^</a>    
+    </div>
+    <div id="newsletter">
+        <label for="email">Subscribe to our newsletter: </label>
+        <input type="email"  id="email2" required placeholder="Email address">
+        <button type="submit">></button>
+    </div>
+    <div class="grid-icon">
+        <a href="https://www.facebook.com/PragueCityUniversity" target="_blank"><img src="media/facebook.png" class="bw"></a>
+        <a href="https://www.instagram.com/praguecityuniversity/" target="_blank"><img src="media/instagram.png" class="bw"></a>
+        <a href="https://twitter.com/PragueCityUni" target="_blank"><img src="media/twitter.png" class="bw"></a>
+        <a href="https://www.linkedin.com/school/prague-city-university/" target="_blank"><img src="media/linkedin.png" class="bw"></a>
+        <a href="https://www.youtube.com/channel/UCtJM41jXN0JSVFM2pxuAzGw" target="_blank"><img src="media/youtube.png" class="bw"></a>
+        <a href="https://www.flickr.com/photos/praguecityuniversity/albums" target="_blank"><img src="media/flikr.png" class="bw"></a>
+    </div>
+</footer> 
